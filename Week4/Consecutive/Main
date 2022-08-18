@@ -1,0 +1,27 @@
+import java.util.*; 
+import java.io.*;
+
+class Main {
+
+  public static int Consecutive(int[] arr) {
+   Arrays.sort(arr);
+   int max=-1;
+   int min=Integer.MAX_VALUE;
+   for(int i=0;i<arr.length;i++){
+     max=Math.max(max,arr[i]);
+     min=Math.min(min,arr[i]);
+
+   }
+   int diff=(max-min)+1;
+
+   return (diff-arr.length);
+
+  }
+
+  public static void main (String[] args) {  
+    // keep this function call here     
+    Scanner s = new Scanner(System.in);
+    System.out.print(Consecutive(s.nextLine())); 
+  }
+
+}
