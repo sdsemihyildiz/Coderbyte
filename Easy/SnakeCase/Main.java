@@ -1,4 +1,4 @@
-package Week4.SnakeCase;
+package Easy.SnakeCase;
 
 import java.util.*;
 
